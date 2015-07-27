@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TableViewCell.h"
+
 
 @class DetailViewController;
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (nonatomic, retain) NSMutableArray *tableData;
 
 @end
 

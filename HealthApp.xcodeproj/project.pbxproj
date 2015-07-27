@@ -15,6 +15,7 @@
 		079487161B6606420057E064 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079487151B6606420057E064 /* Images.xcassets */; };
 		079487191B6606420057E064 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079487171B6606420057E064 /* LaunchScreen.xib */; };
 		079487251B6606420057E064 /* HealthAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 079487241B6606420057E064 /* HealthAppTests.m */; };
+		079487301B6606DB0057E064 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0794872F1B6606DB0057E064 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		0794871E1B6606420057E064 /* HealthAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		079487231B6606420057E064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079487241B6606420057E064 /* HealthAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthAppTests.m; sourceTree = "<group>"; };
+		0794872E1B6606DB0057E064 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		0794872F1B6606DB0057E064 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 			children = (
 				079487091B6606420057E064 /* AppDelegate.h */,
 				0794870A1B6606420057E064 /* AppDelegate.m */,
+				0794872E1B6606DB0057E064 /* TableViewCell.h */,
+				0794872F1B6606DB0057E064 /* TableViewCell.m */,
 				0794870C1B6606420057E064 /* MasterViewController.h */,
 				0794870D1B6606420057E064 /* MasterViewController.m */,
 				0794870F1B6606420057E064 /* DetailViewController.h */,
@@ -227,6 +232,7 @@
 				0794870B1B6606420057E064 /* AppDelegate.m in Sources */,
 				0794870E1B6606420057E064 /* MasterViewController.m in Sources */,
 				079487081B6606420057E064 /* main.m in Sources */,
+				079487301B6606DB0057E064 /* TableViewCell.m in Sources */,
 				079487111B6606420057E064 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
