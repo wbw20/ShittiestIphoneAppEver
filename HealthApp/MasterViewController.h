@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "TableViewCell.h"
+#import "Symptom.h"
 
 
 @class DetailViewController;

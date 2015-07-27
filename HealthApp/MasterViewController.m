@@ -41,19 +41,28 @@
 }
 
 - (void) fetchData {
-    NSMutableArray *values = [[NSMutableArray alloc] initWithObjects:nil];
+    NSMutableArray *symptoms = [[NSMutableArray alloc] initWithObjects:nil];
 
     NSURL *url = [NSURL URLWithString:@"https://healthapp-cf0d100.firebaseio.com/symptom.json"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         if (data.length > 0 && connectionError == nil) {
-            NSMutableArray *response = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+            NSMutableDictionary *response = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
             
             for(id key in response) {
-                [values addObject: key];
+                NSMutableDictionary *obj = [response objectForKey:key];
+                
+                NSInteger *num = (NSInteger)[obj objectForKey:@"id"];
+                NSString *name = [obj objectForKey:@"name"];
+                
+                Symptom *symptom = [Symptom alloc];
+                symptom.id = num;
+                symptom.name = name;
+                
+                [symptoms addObject: symptom];
             }
             
-            tableData = values;
+            tableData = symptoms;
             [tableView reloadData];
         }
     }];
@@ -102,8 +111,10 @@
     if (cell == nil) {
         cell = [[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
+    
+    Symptom *symptom = [tableData objectAtIndex:indexPath.row];
+    cell.label.text = symptom.name;
 
-    cell.label.text = [tableData objectAtIndex:indexPath.row];
     return cell;
 }
 

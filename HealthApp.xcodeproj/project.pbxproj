@@ -16,6 +16,7 @@
 		079487191B6606420057E064 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079487171B6606420057E064 /* LaunchScreen.xib */; };
 		079487251B6606420057E064 /* HealthAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 079487241B6606420057E064 /* HealthAppTests.m */; };
 		079487301B6606DB0057E064 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0794872F1B6606DB0057E064 /* TableViewCell.m */; };
+		079487351B66292D0057E064 /* Symptom.m in Sources */ = {isa = PBXBuildFile; fileRef = 079487341B66292D0057E064 /* Symptom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		079487241B6606420057E064 /* HealthAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthAppTests.m; sourceTree = "<group>"; };
 		0794872E1B6606DB0057E064 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		0794872F1B6606DB0057E064 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		079487331B66292D0057E064 /* Symptom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symptom.h; sourceTree = "<group>"; };
+		079487341B66292D0057E064 /* Symptom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Symptom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				079487151B6606420057E064 /* Images.xcassets */,
 				079487171B6606420057E064 /* LaunchScreen.xib */,
 				079487051B6606420057E064 /* Supporting Files */,
+				079487331B66292D0057E064 /* Symptom.h */,
+				079487341B66292D0057E064 /* Symptom.m */,
 			);
 			path = HealthApp;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				079487081B6606420057E064 /* main.m in Sources */,
 				079487301B6606DB0057E064 /* TableViewCell.m in Sources */,
 				079487111B6606420057E064 /* DetailViewController.m in Sources */,
+				079487351B66292D0057E064 /* Symptom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
