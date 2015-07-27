@@ -36,7 +36,27 @@
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
-    tableData = [[NSMutableArray alloc] initWithObjects:@"One", @"Two", @"Three", nil];
+    tableData = [[NSMutableArray alloc] initWithObjects:nil];
+    [self fetchData];
+}
+
+- (void) fetchData {
+    NSMutableArray *values = [[NSMutableArray alloc] initWithObjects:nil];
+
+    NSURL *url = [NSURL URLWithString:@"https://healthapp-cf0d100.firebaseio.com/symptom.json"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        if (data.length > 0 && connectionError == nil) {
+            NSMutableArray *response = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+            
+            for(id key in response) {
+                [values addObject: key];
+            }
+            
+            tableData = values;
+            [tableView reloadData];
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
