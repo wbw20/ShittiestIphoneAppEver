@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Symptom.h"
+
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) Symptom* detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) IBOutlet UITableView *imageTable;
 
 @end
 

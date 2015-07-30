@@ -436,6 +436,7 @@
 				0794872A1B6606420057E064 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0794872B1B6606420057E064 /* Build configuration list for PBXNativeTarget "HealthAppTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +445,7 @@
 				0794872D1B6606420057E064 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

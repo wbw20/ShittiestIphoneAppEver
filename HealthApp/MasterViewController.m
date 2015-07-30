@@ -90,7 +90,7 @@
         
         Symptom *symptom = [tableData objectAtIndex:indexPath.row];
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        [controller setDetailItem:symptom.name];
+        [controller setDetailItem:symptom];
 
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
