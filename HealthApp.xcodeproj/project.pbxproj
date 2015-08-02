@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0775D2C61B69DDA9003A88DB /* ImageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0775D2C51B69DDA9003A88DB /* ImageTableViewController.m */; };
+		0775D2C91B69E800003A88DB /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0775D2C81B69E800003A88DB /* ImageTableViewCell.m */; };
 		079487081B6606420057E064 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 079487071B6606420057E064 /* main.m */; };
 		0794870B1B6606420057E064 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0794870A1B6606420057E064 /* AppDelegate.m */; };
 		0794870E1B6606420057E064 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0794870D1B6606420057E064 /* MasterViewController.m */; };
@@ -17,6 +19,7 @@
 		079487251B6606420057E064 /* HealthAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 079487241B6606420057E064 /* HealthAppTests.m */; };
 		079487301B6606DB0057E064 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0794872F1B6606DB0057E064 /* TableViewCell.m */; };
 		079487351B66292D0057E064 /* Symptom.m in Sources */ = {isa = PBXBuildFile; fileRef = 079487341B66292D0057E064 /* Symptom.m */; };
+		BEB3A6E2057E48655D84EA9F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C57B0BE86588C7412C0C0F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0245228F125AD94F3BCBA663 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		0775D2C41B69DDA9003A88DB /* ImageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewController.h; sourceTree = "<group>"; };
+		0775D2C51B69DDA9003A88DB /* ImageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewController.m; sourceTree = "<group>"; };
+		0775D2C71B69E800003A88DB /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
+		0775D2C81B69E800003A88DB /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
 		079487021B6606420057E064 /* HealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		079487061B6606420057E064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079487071B6606420057E064 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		0794872F1B6606DB0057E064 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		079487331B66292D0057E064 /* Symptom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symptom.h; sourceTree = "<group>"; };
 		079487341B66292D0057E064 /* Symptom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Symptom.m; sourceTree = "<group>"; };
+		91C57B0BE86588C7412C0C0F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B345C71A6060567FB281887B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB3A6E2057E48655D84EA9F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +86,8 @@
 				079487041B6606420057E064 /* HealthApp */,
 				079487211B6606420057E064 /* HealthAppTests */,
 				079487031B6606420057E064 /* Products */,
+				9A0E31DE4FD2DF94DE815CEC /* Pods */,
+				2C7715779038B67404171C4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +117,10 @@
 				079487051B6606420057E064 /* Supporting Files */,
 				079487331B66292D0057E064 /* Symptom.h */,
 				079487341B66292D0057E064 /* Symptom.m */,
+				0775D2C41B69DDA9003A88DB /* ImageTableViewController.h */,
+				0775D2C51B69DDA9003A88DB /* ImageTableViewController.m */,
+				0775D2C71B69E800003A88DB /* ImageTableViewCell.h */,
+				0775D2C81B69E800003A88DB /* ImageTableViewCell.m */,
 			);
 			path = HealthApp;
 			sourceTree = "<group>";
@@ -134,6 +151,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2C7715779038B67404171C4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91C57B0BE86588C7412C0C0F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A0E31DE4FD2DF94DE815CEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0245228F125AD94F3BCBA663 /* Pods.debug.xcconfig */,
+				B345C71A6060567FB281887B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 079487281B6606420057E064 /* Build configuration list for PBXNativeTarget "HealthApp" */;
 			buildPhases = (
+				86914568DA5434B528A52E83 /* Check Pods Manifest.lock */,
 				079486FE1B6606420057E064 /* Sources */,
 				079486FF1B6606420057E064 /* Frameworks */,
 				079487001B6606420057E064 /* Resources */,
+				7EB4AA46332309A441DD1354 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +265,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7EB4AA46332309A441DD1354 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86914568DA5434B528A52E83 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		079486FE1B6606420057E064 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -239,7 +308,9 @@
 				079487081B6606420057E064 /* main.m in Sources */,
 				079487301B6606DB0057E064 /* TableViewCell.m in Sources */,
 				079487111B6606420057E064 /* DetailViewController.m in Sources */,
+				0775D2C91B69E800003A88DB /* ImageTableViewCell.m in Sources */,
 				079487351B66292D0057E064 /* Symptom.m in Sources */,
+				0775D2C61B69DDA9003A88DB /* ImageTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +436,7 @@
 		};
 		079487291B6606420057E064 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0245228F125AD94F3BCBA663 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HealthApp/Info.plist;
@@ -375,6 +447,7 @@
 		};
 		0794872A1B6606420057E064 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B345C71A6060567FB281887B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HealthApp/Info.plist;
