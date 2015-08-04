@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AWSCore/AWSCore.h>
+
 #import "ImageTableViewCell.h"
 
 @interface ImageTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
